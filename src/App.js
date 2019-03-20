@@ -16,9 +16,13 @@ function App() {
     searchCharacters()
   }, [query])
 
+
+
+
+  
   return(
     <div>
-      <form style={{ textAlign:'center' }}>
+      <form onSubmit={ e => e.preventDefault() } style={{ textAlign:'center' }}>
         <input 
           placeholder='Buscar personaje de Rick and Morty'
           value={query} 
